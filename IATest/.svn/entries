@@ -1,0 +1,123 @@
+10
+
+dir
+181
+https://svn.yoloho.com:8443/svn/testcode/InterfaceTest/IATest
+https://svn.yoloho.com:8443/svn/testcode
+
+
+
+2015-08-29T11:02:50.137845Z
+26
+liubin
+
+
+
+
+
+
+
+
+
+
+
+
+
+incomplete
+ecbe2ed1-b4f6-41f4-94d5-327d39d7d438
+
+.settings
+dir
+
+testresult
+dir
+
+htmlreport
+dir
+
+.classpath
+file
+26
+
+
+
+2015-09-01T07:11:21.153877Z
+f4c7031e94d97d7726cf8461958eb6be
+2015-08-25T02:51:21.628930Z
+1
+liubin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2530
+
+log
+dir
+
+.project
+file
+26
+
+
+
+2015-09-01T07:11:21.153877Z
+1875b3dc1ef1e80ef6b1ed9fa5dd217b
+2015-08-25T02:51:21.628930Z
+1
+liubin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+382
+
+config
+dir
+
+lib
+dir
+
+src
+dir
+
+bin
+dir
+
+testdata
+dir
+

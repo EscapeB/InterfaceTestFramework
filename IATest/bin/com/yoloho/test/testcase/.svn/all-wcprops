@@ -1,0 +1,737 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/testcode/!svn/ver/383/InterfaceTest/IATest/src/com/yoloho/test/testcase
+END
+PointsRewardRuleListTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/testcode/!svn/ver/316/InterfaceTest/IATest/src/com/yoloho/test/testcase/PointsRewardRuleListTest.java
+END
+GroupMyMyfavTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupMyMyfavTest.java
+END
+PointsUserPointsLevelupTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/testcode/!svn/ver/296/InterfaceTest/IATest/src/com/yoloho/test/testcase/PointsUserPointsLevelupTest.java
+END
+GroupGroupCheckTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupCheckTest.java
+END
+UserLoginTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/testcode/!svn/ver/271/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserLoginTest.java
+END
+UserGetaddrTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/testcode/!svn/ver/300/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetaddrTest.java
+END
+GroupAdminDelbanTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/391/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminDelbanTest.java
+END
+GroupGroupQuitTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupQuitTest.java
+END
+PointsRankLastWeekTop10.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/292/InterfaceTest/IATest/src/com/yoloho/test/testcase/PointsRankLastWeekTop10.java
+END
+GroupMyMyrepliedTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupMyMyrepliedTest.java
+END
+GroupMyMypostTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupMyMypostTest.java
+END
+UserGetpushTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/testcode/!svn/ver/308/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetpushTest.java
+END
+GroupGroupApplyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/273/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupApplyTest.java
+END
+FollowCheckInviteTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/testcode/!svn/ver/281/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowCheckInviteTest.java
+END
+GroupTopicSearchdigestTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/337/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicSearchdigestTest.java
+END
+GroupTopicGetassistantlistTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicGetassistantlistTest.java
+END
+GroupTopicClickreplylikeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/testcode/!svn/ver/354/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicClickreplylikeTest.java
+END
+UserUploadavatarTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/346/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserUploadavatarTest.java
+END
+GroupAdminBanlistTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/testcode/!svn/ver/388/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminBanlistTest.java
+END
+UserImconversationcreateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/testcode/!svn/ver/311/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserImconversationcreateTest.java
+END
+GroupTopicRecommendTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/337/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicRecommendTest.java
+END
+UserGetemailTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/testcode/!svn/ver/303/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetemailTest.java
+END
+GroupTopicGetmyassistantlistTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicGetmyassistantlistTest.java
+END
+GroupTransferSearchTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/356/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTransferSearchTest.java
+END
+UserLoginTest1.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/testcode/!svn/ver/314/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserLoginTest1.java
+END
+GroupAdminHasauditTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/testcode/!svn/ver/370/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminHasauditTest.java
+END
+GroupAdminAuditlistTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/398/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminAuditlistTest.java
+END
+GroupAdminDeltopicTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/testcode/!svn/ver/383/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminDeltopicTest.java
+END
+UserSetpushTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/testcode/!svn/ver/317/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserSetpushTest.java
+END
+GroupTopicGetwithextraTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicGetwithextraTest.java
+END
+GroupMyMygroup_v2Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupMyMygroup_v2Test.java
+END
+GroupGroupCreateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupCreateTest.java
+END
+GroupGroupMemberlistTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupMemberlistTest.java
+END
+GroupGroupResendverifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupResendverifyTest.java
+END
+GroupTransferPushTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/testcode/!svn/ver/359/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTransferPushTest.java
+END
+GroupTopicPostTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/337/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicPostTest.java
+END
+UserVerifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/testcode/!svn/ver/344/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserVerifyTest.java
+END
+UserGetusermobileTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/testcode/!svn/ver/309/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetusermobileTest.java
+END
+GroupTopicClicktopicadTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicClicktopicadTest.java
+END
+FollowGetFansList.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/282/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowGetFansList.java
+END
+GroupMyHasgroupTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupMyHasgroupTest.java
+END
+GroupTransferRefuseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/362/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTransferRefuseTest.java
+END
+UserRegTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/testcode/!svn/ver/345/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserRegTest.java
+END
+GroupGroupHomeRecommendTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupHomeRecommendTest.java
+END
+UserImsendTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/testcode/!svn/ver/313/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserImsendTest.java
+END
+GroupTopicDetailTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicDetailTest.java
+END
+GroupGroupGetCategoriesTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupGetCategoriesTest.java
+END
+GroupGroupGroup_recommend_history_ubabyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupGroup_recommend_history_ubabyTest.java
+END
+BlackCancelTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/testcode/!svn/ver/277/InterfaceTest/IATest/src/com/yoloho/test/testcase/BlackCancelTest.java
+END
+UserImsendmsghaveConverstaionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/testcode/!svn/ver/312/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserImsendmsghaveConverstaionTest.java
+END
+GroupMyMygroupTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupMyMygroupTest.java
+END
+GroupTopicGetassistantTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicGetassistantTest.java
+END
+GroupAdminBanTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/389/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminBanTest.java
+END
+GroupMyMyjoinTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupMyMyjoinTest.java
+END
+GroupTopicFavTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicFavTest.java
+END
+PointsLevelRuleListTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/291/InterfaceTest/IATest/src/com/yoloho/test/testcase/PointsLevelRuleListTest.java
+END
+AppDayima_configTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/335/InterfaceTest/IATest/src/com/yoloho/test/testcase/AppDayima_configTest.java
+END
+GroupTransferGetlistTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/testcode/!svn/ver/337/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTransferGetlistTest.java
+END
+UserSignatureTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/318/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserSignatureTest.java
+END
+GroupTopicGetsistertalkTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicGetsistertalkTest.java
+END
+TagTagListTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/testcode/!svn/ver/297/InterfaceTest/IATest/src/com/yoloho/test/testcase/TagTagListTest.java
+END
+TagTopicRecommendTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/testcode/!svn/ver/299/InterfaceTest/IATest/src/com/yoloho/test/testcase/TagTopicRecommendTest.java
+END
+GroupGroupGrouplistubabyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupGrouplistubabyTest.java
+END
+GroupAdminDelgroupTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/testcode/!svn/ver/381/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminDelgroupTest.java
+END
+GroupTransferCancleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/363/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTransferCancleTest.java
+END
+GroupTopicReplyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/337/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicReplyTest.java
+END
+GroupMyNewlistTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupMyNewlistTest.java
+END
+UserLogoutTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/testcode/!svn/ver/315/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserLogoutTest.java
+END
+FollowCancelTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/testcode/!svn/ver/280/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowCancelTest.java
+END
+BlackGetListTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/testcode/!svn/ver/278/InterfaceTest/IATest/src/com/yoloho/test/testcase/BlackGetListTest.java
+END
+FollowAddTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/testcode/!svn/ver/279/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowAddTest.java
+END
+FollowGetInviteCodeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/286/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowGetInviteCodeTest.java
+END
+GroupTopicFavdelTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicFavdelTest.java
+END
+GroupGroupNewRecommendTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupNewRecommendTest.java
+END
+FollowGetFollowingListTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/284/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowGetFollowingListTest.java
+END
+FollowHasNewFansTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/289/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowHasNewFansTest.java
+END
+PointsUserPointsAddTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/293/InterfaceTest/IATest/src/com/yoloho/test/testcase/PointsUserPointsAddTest.java
+END
+GroupTopicListtopicTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/337/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicListtopicTest.java
+END
+FollowGetFFCountTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/283/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowGetFFCountTest.java
+END
+UserGetcitiiesTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/302/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetcitiiesTest.java
+END
+GroupGroupTagsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupTagsTest.java
+END
+GroupGroupSaveTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupSaveTest.java
+END
+GroupAdminTopTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/368/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminTopTest.java
+END
+GroupTopicGetTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicGetTest.java
+END
+GroupGroupGetfeedbackidTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupGetfeedbackidTest.java
+END
+UserGetlvinfoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/306/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetlvinfoTest.java
+END
+UserGetemail_v2Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/304/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetemail_v2Test.java
+END
+GroupGroupVerifyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupVerifyTest.java
+END
+FollowGetRecommendTypeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/287/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowGetRecommendTypeTest.java
+END
+GroupGroupSearchall_v2Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupSearchall_v2Test.java
+END
+GroupGroupReportContentTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupReportContentTest.java
+END
+TagTopicIndexTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/298/InterfaceTest/IATest/src/com/yoloho/test/testcase/TagTopicIndexTest.java
+END
+UserGetlvinfomyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/307/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetlvinfomyTest.java
+END
+FollowGetFollowingTopicsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/testcode/!svn/ver/285/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowGetFollowingTopicsTest.java
+END
+GroupGroupHasnameTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupHasnameTest.java
+END
+GroupAdminDelreplyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/testcode/!svn/ver/382/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminDelreplyTest.java
+END
+TaglistTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/testcode/!svn/ver/15/InterfaceTest/IATest/src/com/yoloho/test/testcase/TaglistTest.java
+END
+PointsUserPointsGetTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/295/InterfaceTest/IATest/src/com/yoloho/test/testcase/PointsUserPointsGetTest.java
+END
+GroupMyTopmyjoinTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupMyTopmyjoinTest.java
+END
+GroupGroupJudgeCreateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupJudgeCreateTest.java
+END
+UserGetavatarTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/301/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetavatarTest.java
+END
+GroupTopicDelmyassistantTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicDelmyassistantTest.java
+END
+PointsUserPointsCountTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/testcode/!svn/ver/294/InterfaceTest/IATest/src/com/yoloho/test/testcase/PointsUserPointsCountTest.java
+END
+GroupAdminPermitlistTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/testcode/!svn/ver/367/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminPermitlistTest.java
+END
+GroupGroupGrouplistTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupGrouplistTest.java
+END
+GroupAdminHaspermitTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/372/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupAdminHaspermitTest.java
+END
+FollowGetTopicsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/288/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowGetTopicsTest.java
+END
+GroupMyMyreplied_v2Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupMyMyreplied_v2Test.java
+END
+BlackAddTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/testcode/!svn/ver/276/InterfaceTest/IATest/src/com/yoloho/test/testcase/BlackAddTest.java
+END
+GroupGroupInfoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupInfoTest.java
+END
+UserUsercountTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/347/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserUsercountTest.java
+END
+GroupGroupGrouplist_wpTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupGrouplist_wpTest.java
+END
+UserGetuserrankTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/310/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetuserrankTest.java
+END
+UserGetinfoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/testcode/!svn/ver/305/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserGetinfoTest.java
+END
+GroupTopicReplydetailTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/testcode/!svn/ver/337/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicReplydetailTest.java
+END
+GroupTopicRecommend_v2Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/337/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupTopicRecommend_v2Test.java
+END
+UserUpdateinfoTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/348/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserUpdateinfoTest.java
+END
+UserVerifycodeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/349/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserVerifycodeTest.java
+END
+UserRegbymobileTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/319/InterfaceTest/IATest/src/com/yoloho/test/testcase/UserRegbymobileTest.java
+END
+GroupGroupSearchTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupSearchTest.java
+END
+FollowVerifyInviteCodeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/testcode/!svn/ver/290/InterfaceTest/IATest/src/com/yoloho/test/testcase/FollowVerifyInviteCodeTest.java
+END
+GroupGroupRecommendTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/testcode/!svn/ver/274/InterfaceTest/IATest/src/com/yoloho/test/testcase/GroupGroupRecommendTest.java
+END

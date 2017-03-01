@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/testcode/!svn/ver/111/InterfaceTest/IATest/lib
+END
+commons-lang3-3.3.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/commons-lang3-3.3.2.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/dom4j-1.6.1.jar
+END
+protobuf-java-2.5.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/protobuf-java-2.5.0.jar
+END
+httpclient-4.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/httpclient-4.3.jar
+END
+stax-api-1.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/stax-api-1.0.1.jar
+END
+ezmorph-1.0.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/ezmorph-1.0.6.jar
+END
+commons-collections-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/commons-collections-3.1.jar
+END
+poi-ooxml-3.8-20120326.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/poi-ooxml-3.8-20120326.jar
+END
+json-lib-2.1-jdk15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/json-lib-2.1-jdk15.jar
+END
+httpmime-4.0.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/testcode/!svn/ver/111/InterfaceTest/IATest/lib/httpmime-4.0.3.jar
+END
+commons-codec-1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/commons-codec-1.6.jar
+END
+poi-3.8-20120326.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/poi-3.8-20120326.jar
+END
+httpcore-4.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/httpcore-4.3.jar
+END
+javax.mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/testcode/!svn/ver/24/InterfaceTest/IATest/lib/javax.mail.jar
+END
+poi-excelant-3.8-20120326.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/poi-excelant-3.8-20120326.jar
+END
+hamcrest-core-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/hamcrest-core-1.3.jar
+END
+commons-logging-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/commons-logging-1.1.jar
+END
+commons-lang-2.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/commons-lang-2.5.jar
+END
+commons-logging-1.1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/commons-logging-1.1.3.jar
+END
+junit-3.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/junit-3.8.1.jar
+END
+log4j-1.2.13.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/log4j-1.2.13.jar
+END
+org.json.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/org.json.jar
+END
+commons-beanutils-1.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/commons-beanutils-1.7.0.jar
+END
+poi-scratchpad-3.8-20120326.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/poi-scratchpad-3.8-20120326.jar
+END
+apache-mime4j-0.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/testcode/!svn/ver/110/InterfaceTest/IATest/lib/apache-mime4j-0.6.jar
+END
+poi-examples-3.8-20120326.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/poi-examples-3.8-20120326.jar
+END
+poi-ooxml-schemas-3.8-20120326.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/poi-ooxml-schemas-3.8-20120326.jar
+END
+xmlbeans-2.3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/lib/xmlbeans-2.3.0.jar
+END

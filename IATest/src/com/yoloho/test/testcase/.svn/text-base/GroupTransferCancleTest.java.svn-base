@@ -1,0 +1,109 @@
+package com.yoloho.test.testcase;
+
+import java.io.File;
+
+import com.yoloho.test.framework.HttpMethods;
+import com.yoloho.test.framework.HttpsMethods;
+import com.yoloho.test.framework.JSONUtility;
+import com.yoloho.test.framework.TestcaseManager;
+import com.yoloho.test.framework.api.Testcase;
+import com.yoloho.test.framework.api.TestcaseEntry;
+
+import net.sf.json.JSONObject;
+
+public class GroupTransferCancleTest {
+	private TestcaseEntry tcEntry;
+	private TestcaseManager tcm;
+	private String cancleid;
+	
+	public GroupTransferCancleTest(TestcaseManager tcmanager,String testsuitname,File logfile,String testdatapath){
+		this.tcEntry = new TestcaseEntry();
+		//this.tcEntry.tcFilePathName="./testdata/TC_UserLoginTest.xls";
+		this.tcEntry.tcFilePathName=testdatapath+"TC_GroupTransferCancleTest.xls";
+		this.tcEntry.TestSuitName=testsuitname;
+		//this.tcEntry.tcLogFilePathName=logfile.getAbsolutePath();
+		this.tcEntry.logFile=logfile;
+		this.tcm=tcmanager;
+	}
+	 
+	public void GroupTransferCancle() throws Exception{
+		this.tcEntry.tcName="GroupTransferCancle";
+		boolean result=false;
+		Testcase.getTestdata(this.tcEntry);
+		BeforeTransferCancle();
+		tcEntry.jsonRequest.remove("id");
+		tcEntry.jsonRequest.put("id", cancleid);
+		Testcase.getResponse(this.tcEntry);
+		result=Testcase.VerfyResult(this.tcEntry);
+		Testcase.UpdateTestResult(result,this.tcEntry);
+		this.tcm.updateTestResult(this.tcEntry);
+		
+	}
+	public void BeforeTransferCancle(){
+		String url="https://forumapi.test.yoloho.com/group/transfer/push";
+		String req="{\"token\":\"104976828#9e05a6637a3e32fede635132d92a8b41\",\"touid\":\"104974037\",\"group_id\":\"150349\",\"intro\":\"pppp\"}";
+		JSONObject jsonrequest=JSONObject.fromObject(req);
+		String response=HttpsMethods.sendHttpsClientPost(url, JSONUtility.JSON2Map(jsonrequest),"UTF-8");
+		String url2="https://forumapi.test.yoloho.com/group/transfer/getlist";
+		String req2="{\"token\":\"104976828#9e05a6637a3e32fede635132d92a8b41\"}";
+		JSONObject jsonrequest2=JSONObject.fromObject(req2);
+		String response2=HttpsMethods.sendHttpsClientPost(url2, JSONUtility.JSON2Map(jsonrequest2),"UTF-8");
+		JSONObject jsonresponse2=JSONObject.fromObject(response2);
+		JSONObject json=JSONObject.fromObject(jsonresponse2.getJSONArray("list").get(0));
+		String transferId=json.get("id").toString();
+//		JSONObject jsonresponse=JSONObject.fromObject(response);
+//		JSONObject json=JSONObject.fromObject(jsonresponse.getJSONArray("list").get(0));
+//		String transferId=json.get("id").toString();
+		cancleid=transferId;
+		System.out.println(cancleid);
+    }
+	public void GroupTransferCancle_WrongId() throws Exception{
+		this.tcEntry.tcName="GroupTransferCancle_WrongId";
+		boolean result=false;
+		Testcase.getTestdata(this.tcEntry);
+		Testcase.getResponse(this.tcEntry);
+		result=Testcase.VerfyResult(this.tcEntry);
+		Testcase.UpdateTestResult(result,this.tcEntry);
+		this.tcm.updateTestResult(this.tcEntry);
+	}
+	public void GroupTransferCancle_Nullid() throws Exception{
+		this.tcEntry.tcName="GroupTransferCancle_Nullid";
+		boolean result=false;
+		Testcase.getTestdata(this.tcEntry);
+		Testcase.getResponse(this.tcEntry);
+		result=Testcase.VerfyResult(this.tcEntry);
+		Testcase.UpdateTestResult(result,this.tcEntry);
+		this.tcm.updateTestResult(this.tcEntry);
+	}
+	public void GroupTransferCancle_NullGroupid() throws Exception{
+		this.tcEntry.tcName="GroupTransferCancle_NullGroupid";
+		boolean result=false;
+		Testcase.getTestdata(this.tcEntry);
+		Testcase.getResponse(this.tcEntry);
+		result=Testcase.VerfyResult(this.tcEntry);
+		Testcase.UpdateTestResult(result,this.tcEntry);
+		this.tcm.updateTestResult(this.tcEntry);
+	}
+	public void GroupTransferCancle_WrongGroupid() throws Exception{
+		this.tcEntry.tcName="GroupTransferCancle_WrongGroupid";
+		boolean result=false;
+		Testcase.getTestdata(this.tcEntry);
+		Testcase.getResponse(this.tcEntry);
+		result=Testcase.VerfyResult(this.tcEntry);
+		Testcase.UpdateTestResult(result,this.tcEntry);
+		this.tcm.updateTestResult(this.tcEntry);
+	}
+	public void GroupTransferCancle_Alreadycancle() throws Exception{
+		this.tcEntry.tcName="GroupTransferCancle_Alreadycancle";
+		boolean result=false;
+		Testcase.getTestdata(this.tcEntry);
+		Testcase.getResponse(this.tcEntry);
+		result=Testcase.VerfyResult(this.tcEntry);
+		Testcase.UpdateTestResult(result,this.tcEntry);
+		this.tcm.updateTestResult(this.tcEntry);
+	}
+	public void finalize(){
+		this.tcEntry=null;
+		this.tcm=null;
+	}
+}

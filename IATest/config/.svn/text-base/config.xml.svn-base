@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+	<controllerfile path="./config/" name="TC_Controller.xls"/>
+	<testresult path="/home/ceshi/桌面/IATest/TestResults/"/>
+	<htmlreport path="/home/ceshi/桌面/IATest/HTMLReports/"/>
+	<log url="http://192.168.124.80/" path="/home/ceshi/桌面/IATest/Logs/"/>
+	<testdata path="./testdata/"/>
+	<email server="smtp.exmail.qq.com" port="465" from="接口测试报告" username="testteam@dayima.com" password="testapi123!" to="liubin@dayima.com;gengdongya@dayima.com;chenzhelong@dayima.com"/>
+</config>
+
+
+

@@ -1,0 +1,141 @@
+package com.yoloho.test.framework;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Properties;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.NoSuchProviderException;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
+
+public class ReportEmailUtility {
+	/*
+	 * private static int port = 465; private static String server =
+	 * "smtp.exmail.qq.com";//邮件服务器mail.cpip.net.cn private static String from =
+	 * "接口测试报告";//发送者,显示的发件人名字 private static String user =
+	 * "testteam@dayima.com";//发送者邮箱地址 private static String password =
+	 * "testapi123!";//密码
+	 */
+	/*
+	 * private static int port = 0; private static String server
+	 * =null;//邮件服务器mail.cpip.net.cn private static String from
+	 * =null;//发送者,显示的发件人名字 private static String user = null;//发送者邮箱地址 private
+	 * static String password =null;//密码
+	 */
+
+	public static void sendReportEmail(String htmlfilename, String emailtolist, String emailfrom,
+			String emailserveraddress, int emailserverport, String username, String password)
+					throws UnsupportedEncodingException, MessagingException {
+		Properties props = null;
+		Transport transport = null;
+		Session session = null;
+		MimeMessage msg = null;
+		InternetAddress fromAddress = null;
+		InternetAddress[] toAddress = null;
+		String toList[] = null;
+		String subject = null;
+		String body = "";
+		String encode = "UTF-8";
+		Date senddate = null;
+
+		int i = 0;
+
+		props = new Properties();
+		// props.put("mail.smtp.host", server);
+		props.put("mail.smtp.host", emailserveraddress);
+		// props.put("mail.smtp.port", String.valueOf(port));
+		props.put("mail.smtp.port", String.valueOf(emailserverport));
+		props.put("mail.smtp.auth", "true");
+		// props.setProperty("mail.smtp.socketFactory.class", SSL_FACTORY);
+		props.put("mail.smtp.ssl.enable", "true");
+		props.setProperty("mail.smtp.socketFactory.fallback", "false");
+		session = Session.getDefaultInstance(props, null);
+		transport = session.getTransport("smtp");
+		try {
+			// transport.connect(server, user, password);
+			transport.connect(emailserveraddress, username, password);
+		} catch (MessagingException e) {
+			System.out.println(e.toString());
+		}
+
+		senddate = new Date();
+
+		msg = new MimeMessage(session);
+		msg.setSentDate(senddate);
+		// fromAddress = new InternetAddress(user,from,"UTF-8");
+		fromAddress = new InternetAddress(username, emailfrom, "UTF-8");
+		msg.setFrom(fromAddress);
+
+		// InternetAddress[] toAddress= new Internet Address[1];
+		toList = emailtolist.split(";");
+		if (toList.length > 0) {
+			toAddress = new InternetAddress[toList.length];
+		} else {
+			throw new UnsupportedEncodingException();
+
+		}
+		for (String to : toList) {
+			toAddress[i++] = new InternetAddress(to);
+		}
+		subject = getSubject();
+		try {
+			body = getBody(htmlfilename);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		msg.setRecipients(Message.RecipientType.TO, toAddress);
+		msg.setSubject(subject, encode);
+		msg.setText(body, encode);
+		// msg.setContent(body, "text/html;charset=UTF-8");
+		// msg.setContent(body, "text/html;");
+		msg.setContent(body, "text/html;charset=gbk");
+		// MimeMultipart multipart = new MimeMultipart("related");
+		// MimeBodyPart htmlBodyPart = new MimeBodyPart();
+		// htmlBodyPart.setContent(body, "text/html;charset=gbk");
+		// multipart.addBodyPart(htmlBodyPart);
+		// msg.setContent(multipart);
+		msg.saveChanges();
+		transport.sendMessage(msg, msg.getAllRecipients());
+	}
+
+	private static String getSubject() {
+		String strSubject = null;
+		strSubject = "接口自动化测试报告";
+		return strSubject;
+	}
+
+	public static String getBody(String htmlfile) throws IOException {
+		String body = "";
+		// body="<h1>helloworld!</h1>";
+		File htmlreport = new File(htmlfile);
+		if (htmlreport.isFile() && htmlreport.exists()) {
+			InputStreamReader read = new InputStreamReader(new FileInputStream(htmlreport), "utf-8");
+			BufferedReader bufferedReader = new BufferedReader(read);
+
+			while (true) {
+				body += bufferedReader.readLine();
+				if (body.substring(body.length() - 7, body.length()).equals("</html>")) {
+					break;
+				}
+			}
+			read.close();
+		}
+
+		return body;
+	}
+	
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+	<controllerfile path="./config/" name="TC_Controller.xls"/>
+	<testresult path="d:/doc/result/"/>
+	<htmlreport path="./htmlreport"></htmlreport>
+	<log url="http://192.168.124.51/" path="d:/doc/log/"></log>
+	<testdata path="./testdata/"></testdata>
+	<email server="smtp.163.com" port="465" from="接口测试报告" username="chen20332@163.com" password="czl12301145" to="463355954@qq.com"/>
+</config>
+
+
+

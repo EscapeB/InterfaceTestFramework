@@ -1,0 +1,824 @@
+package com.yoloho.test.framework;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+public class JSONUtility {
+
+	/*
+	public static void main(String args[])
+	{/*
+		Map<String,Object>  map =new HashMap<String,Object>();
+		JSONObject json =null;
+		JSONObject json2=null;
+		JSONObject json3 =null;
+		JSONArray jsonarray=new JSONArray();
+		map.put("name", "abc");
+		map.put("age",18);
+		map.put("isMarried", false);
+		//map.put("json", {"name":"abcd","age":18});
+	    json = Map2JSON(map);
+	    jsonarray.add(json);
+	    map.put("json", jsonarray);
+	    json2=Map2JSON(map);
+	    System.out.println("json1:"+json.toString());
+	    Iterator key=json.keys();
+	    Object obj;
+	   while(key.hasNext()){
+		   obj = key.next();
+		   System.out.println(json.get(obj) + ":"+json.get(obj).getClass().getSimpleName());
+	   }
+	   System.out.println("json2:"+json2.toString());
+	   Iterator key2=json2.keys();
+	   while(key2.hasNext()){
+		   obj = key2.next();
+		   System.out.println(json2.get(obj) + ":"+json2.get(obj).getClass().getSimpleName());
+	   }
+	   String str;
+	   str = "{\"abc\":[{\"name\":\"xxx\"},{\"name\":\"yyy\"}]}";
+	   json3=String2JSON(str);
+	   Iterator key3=json3.keys();
+	   while(key3.hasNext()){
+		   obj=key3.next();
+		   System.out.println(json3.get(obj) + ":"+json3.get(obj).getClass().getSimpleName());
+	   }
+	   */
+		
+		//String jsonstr1,jsonstr2;
+		//JSONObject json1,json2;
+		
+		//jsonstr1="{\"x1\":\"abc\", \"x2\":18,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaa\",\"y2\":{\"z1\":\"abc\",\"z2\":0}},\"x6\":[{\"a1\":\"a\"},{\"a2\":\"b\"}]}";
+		//jsonstr1="{\"x1\":\"abc\", \"x2\":18,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaa\",\"y2\":{\"z1\":\"abc\",\"z2\":0}},\"x6\":[{\"a1\":\"a\"},{\"a2\":\"b\"}]}";
+		//jsonstr1="{\"x1\":\"abc\", \"x2\":18,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaa\",\"y2\":{\"z1\":\"abc\",\"z2\":0}},\"x6\":[{\"a1\":\"a\"},{\"a3\":\"b\"}]}";
+		//jsonstr1="{\"x1\":\"abc\", \"x2\":18,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaa\",\"y2\":{\"z1\":\"abc\",\"z3\":0}},\"x6\":[{\"a1\":\"a\"},{\"a2\":\"b\"}]}";
+		//jsonstr1="{\"x1\":\"abc\", \"x2\":18,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaa\",\"y2\":{\"z1\":\"abc\",\"z2\":0}},\"x6\":[{\"a0\":\"a\"},{\"a2\":\"b\"}]}";
+		//jsonstr1="{\"x1\":\"abc\", \"x2\":18,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaa\",\"y2\":{\"z0\":\"abc\",\"z2\":0}},\"x6\":[{\"a1\":\"a\"},{\"a2\":\"b\"}]}";
+		//jsonstr1="{\"x1\":\"abc\", \"x2\":18,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaa\",\"y2\":{\"z1\":\"abc\",\"z2\":0}},\"x6\":[{\"a1\":\"c\"},{\"a2\":\"d\"}]}";
+		//jsonstr1="{\"x1\":\"absdaadc\", \"x2\":14448,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaaaaaa\",\"y2\":{\"z1\":\"abdddc\",\"z2\":3330}},\"x6\":[{\"a1\":\"cdd\"},{\"a2\":\"dfg\"}]}";
+		//jsonstr2="{\"x1\":\"abc\", \"x2\":18,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaa\",\"y2\":{\"z1\":\"abc\",\"z2\":0}},\"x6\":[{\"a1\":\"a\"},{\"a2\":\"b\"}]}";
+		//jsonstr1="{\"x1\":\"abc\", \"x2\":\"18\",\"x3\":false}";
+		//jsonstr1="{\"x1\":\"abc\", \"x2\":16,\"x3\":\"false\"}";
+		//jsonstr2="{\"x1\":\"abc\", \"x2\":18,\"x3\":false}";
+		//jsonstr2="{\"uid\":\"String\",\"timestamp\":\"Integer\",\"errno\":\"String\",\"nick\":\"String\",\"errdesc\":\"String\",\"access_token\":\"String\",\"data\":[{\"key1\":\"String\"}],\"json\":{\"name\":\"String\",\"age\":\"Integer\"}}";
+		//jsonstr1="{\"uid\":\"0000001\",\"timestamp\":123456,\"errno\":\"0\",\"nick\":\"aa\",\"errdesc\":\"\",\"access_token\":\"fadsfsafsjklfsjlfjslkfjklsjfklsdjklfjslkfjsl\",\"data\":[{\"key1\":\"value1\"},{\"key1\":\"value2\"}],\"json\":{\"name\":\"abc\",\"age\":20}}";
+		//System.out.println(jsonstr2);
+		//System.out.println(jsonstr1);
+		
+		//jsonstr1 = "{\"topic_replynum\": \"8\",\"errno\": \"0\",\"topic_info\": {\"uid\": \"104974209\",\"topic_category_id\": \"115\",\"head_pic\": {},\"group_title\": \"测试小组\",\"id\": \"8314840\",\"createtime\": \"1440061743\",\"title\": \"你是哪里人\",\"replynum\": \"8\",\"viewnum\": \"126\",\"pic\": [],\"content\": \"陌陌里面带伞了，磨磨唧唧图\",\"nick\": \"g10\",\"group\": {\"title\": \"测试小组\",\"group_id\": \"115\",\"type\": \"0\"},},\"errdesc\": \"\",\"list\": [{\"uid\": \"104974209\",\"replied_pic\": [],\"id\": \"27126\",\"topic_id\": \"8314840\",\"group_id\": \"115\",\"content\": \"明模式\",\"is_owner\": 1,\"floor\": \"8\",\"nick\": \"g10\",},{\"uid\": \"104974037\",\"replied_pic\": [],\"id\": \"27125\",\"topic_id\": \"8314840\",\"group_id\": \"115\",\"content\": \"您破生意兴隆\",\"is_owner\": 0,\"floor\": \"7\",\"nick\": \"g1\",},{\"uid\": \"104974209\",\"replied_pic\": [],\"id\": \"27119\",\"topic_id\": \"8314840\",\"group_id\": \"115\",\"content\": \"拉锯图\",\"is_owner\": 1,\"floor\": \"1\",\"nick\": \"g10\"}]}";
+		//jsonstr2 = "{\"topic_replynum\": \"8\",\"errno\": \"0\",\"topic_info\": {\"uid\": \"104974209\",\"topic_category_id\": \"115\",\"head_pic\": {},\"group_title\": \"测试小组\",\"id\": \"8314840\",\"createtime\": \"1440061743\",\"title\": \"你是哪里人\",\"replynum\": \"8\",\"viewnum\": \"126\",\"pic\": [],\"content\": \"陌陌里面带伞了，磨磨唧唧图\",\"nick\": \"g10\",\"group\": {\"title\": \"测试小组\",\"group_id\": \"115\",\"type\": \"0\"},},\"errdesc\": \"\",\"list\": [{\"uid\": \"104974209\",\"replied_pic\": [],\"id\": \"27126\",\"topic_id\": \"8314840\",\"group_id\": \"115\",\"content\": \"明模式\",\"is_owner\": 1,\"floor\": \"8\",\"nick\": \"g10\",},{\"uid\": \"104974037\",\"replied_pic\": [],\"id\": \"27125\",\"topic_id\": \"8314840\",\"group_id\": \"115\",\"content\": \"您破生意兴隆\",\"is_owner\": 0,\"floor\": \"7\",\"nick\": \"g1\",},{\"uid\": \"104974209\",\"replied_pic\": [],\"id\": \"27119\",\"topic_id\": \"8314840\",\"group_id\": \"115\",\"content\": \"拉锯图\",\"is_owner\": 1,\"floor\": \"1\",\"nick\": \"g10\"}]}";
+		//jsonstr1="{\"data\":{}}";
+		//jsonstr2="{\"data\":{}}";
+		//jsonstr1="{\"list\":[]}";
+		//jsonstr2="{\"list\":[]}";
+			
+		//json1=JSONObject.fromObject(jsonstr1);
+		//json2=JSONObject.fromObject(jsonstr2);
+		//System.out.println("json1:"+json1.toString());
+		//System.out.println("json2:"+json2.toString());
+		
+		//System.out.println(Compare2JSONKeys(json1,json2));
+		//System.out.println(Compare2JSONValues(json1,json2));
+		//System.out.println(Compare2JSONTypes(json1,json2));
+		/*
+		ResultSet rs =null;
+		MysqlUtility dayimaOffline=new MysqlUtility("192.168.127.56","3306","dayima","kangseed","JuiIo90PoiUiejOiu38Hu");
+		dayimaOffline.getConnection();
+		try {
+			rs =dayimaOffline.getResultSetByExecuteQuery("select uid,nick From dayima.user where nick='wj01' ");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			System.out.println(rs.getMetaData().getColumnCount());
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		/* test json copy
+		String jsonstr1;
+		JSONObject json1,json2;
+				jsonstr1="{\"x1\":\"abc\", \"x2\":18,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaa\",\"y2\":{\"z1\":\"abc\",\"z2\":0}},\"x6\":[{\"a1\":\"a\"},{\"a2\":\"b\"}]}";
+				//jsonstr1="{\"x1\":\"abc\", \"x2\":18,\"x3\":false,\"x4\":null,\"x5\":{\"y1\":\"aaa\",\"y2\":{\"z1\":\"abc\",\"z2\":0}},\"x6\":[{\"a1\":\"a\"},{\"a2\":\"b\"}]}";
+		json1=JSONObject.fromObject(jsonstr1);
+		json2=JSONCopy(json1);
+		json1.put("x1", "xxx");
+		System.out.println("json1:"+json1);
+		System.out.println("json2:"+json2);
+		*/
+		//JSONObject json1,json2;
+		//String jsonstr1,jsonstr2;
+		//jsonstr1="{\"x1\" : [{\"a1\":\"abc\",\"a2\":\"111\"},{\"a1\":\"0\",\"a2\":111}]}";
+		//jsonstr2="{\"x1\":[{\"a1\":\"11\"}]}";
+		//jsonstr2="{\"x1\":[{\"a1\":\"11\",\"a2\":\"zzz\"}]}";
+		//jsonstr2="{\"x1\":[{\"a1\":\"String\",\"a2\":\"String\"}]}";
+		//jsonstr1="{\"array\":[\"aa\",\"bb\"]}";
+		//jsonstr2="{\"array\":[\"ba\",\"aa\"]}";
+		//jsonstr2="{\"array\":[\"aa\",\"bb\"]}";
+		//jsonstr2="{\"array\":[\"String\",\"String\"]}";
+		//jsonstr1="{\"array\":[]}";
+		//jsonstr2="{\"array\":[]}";
+		//jsonstr1="{data:[{\"nick\":\"\",\"uid\":123456789,\"medals\":[],\"level\":0,\"levelText\":\"\",\"topicNum\":0,\"icon\":\"\",\"id\":673,\"levelIcon\":\"\"}]}";
+        //jsonstr2="{data:[{\"nick\":\"String\",\"uid\":\"int\",\"medals\":[],\"level\":\"int\",\"levelText\":\"String\",\"topicNum\":\"int\",\"icon\":\"String\",\"id\":\"int\",\"levelIcon\":\"String\"}]}";
+		//jsonstr1="{\"errno\":\"0\",\"errdesc\":\"\",\"rows\":[{\"level\":1,\"id\":1,\"startPoints\":50,\"endPoints\":159},{\"level\":2,\"id\":3,\"startPoints\":160,\"endPoints\":389}],\"timestamp\":1441596006}";
+		//jsonstr2="{\"errno\":\"0\",\"errdesc\":\"\",\"rows\":[{\"level\":1,\"id\":1,\"startPoints\":50,\"endPoints\":159},{\"level\":2,\"id\":2,\"startPoints\":160,\"endPoints\":389}],\"timestamp\":1441534353}";
+
+		//json1=JSONObject.fromObject(jsonstr1);
+		//json2=JSONObject.fromObject(jsonstr2);
+	
+	/*	try {
+			System.out.println(Compare2JSONTypes(json1,json2));
+		} catch (TypeErrorException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}*/
+		/*
+		try {
+			System.out.println(Compare2JSONKeys(json1,json2));
+		} catch (KeyErrorException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		*/
+		/*
+		try {
+			System.out.println(Compare2JSONValues(json1,json2));
+		} catch (ValueErrorException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+		//String str1="{\"id\":\"150297\",\"timestamp\":1441709300,\"errno\":\"0\",\"errdesc\":\"\"}";
+		//String str2="{\"timestamp\":1441094928,\"id\":\"150267\",\"errno\":\"0\",\"errdesc\":\"\"}";
+	/*
+		JSONObject json1=JSONObject.fromObject(jsonstr1);
+		JSONObject json2=JSONObject.fromObject(jsonstr2);
+		try {
+			System.out.println(Compare2JSONKeys(json1,json2));
+		} catch (KeyErrorException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}*/
+	public static JSONObject String2JSON(String str){
+		return JSONObject.fromObject(str);
+		
+	}
+	public static JSONObject Map2JSON(Map<?,?> map){
+		
+		return JSONObject.fromObject(map);
+	}
+	public static Map<String,Object> JSON2Map(JSONObject json){
+		Map<String,Object> map =new HashMap<String,Object>();
+		for(Object key:json.keySet()){
+			Object value=json.get(key);
+			if(value instanceof JSONArray){
+				List list = new ArrayList();
+				Iterator it = ((JSONArray)value).iterator();
+				while(it.hasNext()){
+					JSONObject jason=(JSONObject)it.next();
+					list.add(JSON2Map(jason));
+				}
+				map.put(key.toString(), list);
+			}
+			else if(value instanceof JSONObject){
+				map.put(key.toString(), JSON2Map((JSONObject)value));
+			}
+			else{
+				map.put(key.toString(), value);
+			}
+		}
+		return map;
+	}
+	public static boolean Compare2JSONSize(JSONObject json1,JSONObject json2){
+		if (json1==null || json2==null){
+			return false;
+		}
+		if(json1.size()!=json2.size()){
+			return false;
+		}
+		else{
+			return true;
+		}
+	}
+	
+	public static boolean Compare2JSONKeys  (JSONObject json1,JSONObject json2) throws KeyErrorException{
+		//System.out.println("JSON1:" +json1.toString());
+		//System.out.println("JSON2:" +json2.toString());
+		
+		boolean result=false;
+		String errorMsg="[Error:Compare2JSONKeys:JSONUtility:]";
+		JSONArray keys1,keys2;
+		keys1=json1.names();
+		keys2=json2.names();
+		Iterator it1=keys1.iterator();
+		Iterator it2=keys2.iterator();
+		//System.out.println("keys1:" +keys1.toString());
+		//System.out.println("keys2:" +keys2.toString());
+		if(keys1.size()==0){
+			if(keys2.size()==0){
+				result=true;
+				return result;
+			}
+			else{
+				result=false;
+				//System.out.println("JSON1 does NOT equal JSON2");
+				//System.out.println("JSON1 is NULL"+ json1.toString());
+				//System.out.println("JSON2 is NOT NULL" +json2.toString());
+				errorMsg+="JSON1 does NOT equal JSON2 \n\r";
+				errorMsg+="JSON1 is NULL"+ json1.toString() +"\n\r";
+				errorMsg+="JSON2 is NOT NULL" +json2.toString() +"\n\r";
+				throw new KeyErrorException(errorMsg);
+				//return result;
+			}			
+		}	
+		while(it1.hasNext()){
+			String k1=it1.next().toString();			
+			//if(!it2.hasNext()){it2=keys2.iterator();}
+			it2=keys2.iterator();
+			while(it2.hasNext()){				
+				String k2=it2.next().toString();
+				if (k1.equals(k2)){
+					result=true;
+					//System.out.println(json1.get(k1).getClass().getSimpleName().toString());
+					if(json1.get(k1).getClass().getSimpleName().toString().equals("JSONObject")&&(!json1.get(k1).toString().equals("null"))){
+						//System.out.println(json1.get(k1));
+						//System.out.println(json1.get(k1).getClass().getSimpleName().toString());
+						//Compare2JSONKeys((JSONObject)json1.get(k1),(JSONObject)json2.get(k2));
+						//if(){
+							
+						//}
+						//System.out.println(json1.get(k1).getClass().getSimpleName());
+						
+						if(Compare2JSONKeys((JSONObject)json1.get(k1),(JSONObject)json2.get(k2))){
+							
+						}
+						else{							
+							result =false;
+							errorMsg+="Key:" +k1;
+							errorMsg+=" Keys in SubJSONObject json1:"+((JSONObject)json1.get(k1)).toString() + " Does NOT Equal"+" Keys in SubJSONObject json2:" +((JSONObject)json2.get(k2)).toString();
+							errorMsg+= "\n\r";
+							throw new KeyErrorException(errorMsg);
+							//return result;
+						}
+						
+					}
+					else if(json1.get(k1).getClass().getSimpleName().toString().equals("JSONArray")){
+						//System.out.println(json1.get(k1).getClass().getSimpleName().toString());
+						//System.out.println(((JSONArray)json1.get(k1)).size());
+						//System.out.println(((JSONArray)json2.get(k2)).size());
+						
+						Iterator it3= ((JSONArray)json1.get(k1)).iterator();
+						Iterator it4= ((JSONArray)json2.get(k2)).iterator();
+						while(it3.hasNext()){
+							//System.out.println(it3.next());
+							//System.out.println(it3.next().getClass().getSimpleName().toString());
+							Object obj = it3.next();
+							//JSONObject subjson1=(JSONObject)(it3.next());
+							if(!obj.getClass().getSimpleName().equals("JSONObject")){
+									continue;								
+							}							
+							JSONObject subjson1=(JSONObject)(obj);
+							if(!it4.hasNext()){it4= ((JSONArray)json2.get(k2)).iterator();}
+							while(it4.hasNext()){
+								JSONObject  subjson2=(JSONObject)(it4.next());
+								if(Compare2JSONKeys(subjson1,subjson2)){
+									//it4= ((JSONArray)json2.get(k2)).iterator();
+									break;
+								}
+								else{
+									if(!it4.hasNext()){
+										//System.out.println("Key in SubJSON1:" +k1+"Does NOT Equal Key in SubJSON2:"+k2);
+										//System.out.println("SubJSON1:" +subjson1);
+										//System.out.println("SubJSON2:" +subjson2);
+										//System.out.println( ((JSONArray)json1.get(k1)).toString());
+										//System.out.println( ((JSONArray)json2.get(k2)).toString());										
+										result=false;
+										//errorMsg+="Key:" +k1;
+										errorMsg+="Key in SubJSON1:" +k1+"Does NOT Equal Key in SubJSON2:"+k2+ "\n\r";
+										errorMsg+="SubJSON1:" +subjson1+ "\n\r";
+										errorMsg+="SubJSON2:" +subjson2+ "\n\r";
+										throw new KeyErrorException(errorMsg);
+										//return result;
+									}
+								}
+							}
+							//it4= ((JSONArray)json2.get(k2)).iterator();								
+						}							
+					}
+					else{						
+					}
+					//System.out.println("Key in JSON1:" +k1+" Equals Key in JSON2:"+k2);
+					//it2=keys2.iterator();
+					if(!it2.hasNext()){it2=keys2.iterator();}
+					break;
+				}
+				else{
+					if(!it2.hasNext()){
+						//System.out.println("Key in JSON1:" +k1+"Does NOT Equal Key in JSON2:"+k2);
+						//System.out.println("JSON1:" +json1);
+						//System.out.println("JSON2:" +json2);			
+						errorMsg+="Key in JSON1:" +k1+"Does NOT Equal Key in JSON2:"+k2 + "\n\r";
+						errorMsg+="JSON1:" +json1;
+						errorMsg+="JSON2:" +json2;
+						throw new KeyErrorException(errorMsg);
+					}
+					 result=false;
+				}					
+			}
+		}		
+		return result;
+	}
+	public static boolean Compare2JSONValues(JSONObject json1,JSONObject json2,int flag) throws ValueErrorException{
+		String errorMsg="[Error:Compare2JSONValues:JSONUtility:]";
+		boolean result=false;
+		JSONArray keys1,keys2;
+		keys1=json1.names();
+		keys2=json2.names();
+		Iterator it1=keys1.iterator();
+		Iterator it2=keys2.iterator();
+		 int intflag;
+		 intflag = flag;
+		//System.out.println("keys1:" +keys1.toString());
+		//System.out.println("keys2:" +keys2.toString());
+		if(keys1.size()==0){
+			if(keys2.size()==0){
+				result=true;
+				return result;
+			}
+			else{
+				result=false;
+				//System.out.println("JSON1 does NOT equal JSON2");
+				//System.out.println("JSON1 is NULL"+ json1.toString());
+				//System.out.println("JSON2 is NOT NULL" +json2.toString());
+				errorMsg+="JSON1 does NOT equal JSON2 \n\r";
+				errorMsg+="JSON1 is NULL"+ json1.toString() +"\n\r";
+				errorMsg+="JSON2 is NOT NULL" +json2.toString() +"\n\r";
+				throw new ValueErrorException(errorMsg);
+				//return result;
+			}
+		}
+		while(it1.hasNext()){
+			String k1=it1.next().toString();
+			while(it2.hasNext()){
+				String k2=it2.next().toString();
+				if(json1.get(k1).getClass().getSimpleName().toString().equals("JSONObject")&&(!json1.get(k1).toString().equals("null"))){
+					intflag++;
+					if(k1.equals(k2)&&(!k1.equals("timestamp"))){
+						if(!Compare2JSONValues((JSONObject)json1.get(k1),(JSONObject)json2.get(k2),intflag)){
+							result=false;
+							errorMsg+="Key:" +k1;
+							errorMsg+=" Values in SubJSONObject json1  Does NOT Equal values in SubJSONObject json2" ;
+							errorMsg+="json1:"+((JSONObject)json1.get(k1)).toString() + " \n\r";
+							errorMsg+="json2:"+((JSONObject)json2.get(k2)).toString() + " \n\r";							
+							//return result;
+							throw new ValueErrorException(errorMsg);
+						}
+						else{
+							result=true;
+							break;
+						}
+						//Compare2JSONValues(json1,json2);
+					}
+					else{
+						if(!it2.hasNext()){
+							it2=keys2.iterator();							
+						}		
+					}					
+				}
+				else if(json1.get(k1).getClass().getSimpleName().toString().equals("JSONArray")){
+					//System.out.println("hello");
+					//break;
+					intflag++;
+					Iterator it3= ((JSONArray)json1.get(k1)).iterator();
+					Iterator it4= ((JSONArray)json2.get(k2)).iterator();
+					JSONObject subjson1=null;
+					JSONObject subjson2=null;
+					while(it3.hasNext()){
+						Object obj1 = it3.next();
+						if(obj1.getClass().getSimpleName().equals("JSONObject")){
+							 subjson1=(JSONObject)(obj1);	
+						}
+						//JSONObject subjson1=(JSONObject)(it3.next());	
+						//if(!it4.hasNext()){it4= ((JSONArray)json2.get(k2)).iterator();}
+						it4= ((JSONArray)json2.get(k2)).iterator();
+						while(it4.hasNext()){
+							Object obj2=it4.next();
+							if(obj2.getClass().getSimpleName().equals("JSONObject"))
+							{
+								 subjson2=(JSONObject)(obj2);							
+							}
+							else{
+								//if(!it4.hasNext()){
+								//	it4= ((JSONArray)json2.get(k2)).iterator();
+								//	}
+								/*
+								if( obj1.getClass().getSimpleName().equals("String")){
+									if(obj1.equals(obj2)){
+										result=true;
+										break;
+									}
+									else{
+										//it4= ((JSONArray)json2.get(k2)).iterator();
+										result=false;
+										
+										//if(!it4.hasNext()){
+										//	it4= ((JSONArray)json2.get(k2)).iterator();											
+											//continue;
+										//}
+										//System.out.println();
+										if((result==false)&&(it4.hasNext()==false)){
+											errorMsg+="Values in Array1 Does NOT Equal Values in Array2:\n\r";
+											errorMsg+="Array1:" +json1.get(k1);
+											errorMsg+="Array2:" +json2.get(k2);
+											throw new ValueErrorException(errorMsg);
+										}
+									}
+								}
+								else{
+									if(obj1.equals(obj2)){
+										result=true;
+										break;
+									}
+									else{
+										result=false;
+										//continue;
+										if((result==false)&&(it4.hasNext()==false)){
+											errorMsg+="Values in Array1 Does NOT Equal Values in Array2:\n\r";
+											errorMsg+="Array1:" +json1.get(k1);
+											errorMsg+="Array2:" +json2.get(k2);
+											throw new ValueErrorException(errorMsg);
+										}
+									}
+									*/
+								if(obj1.equals(obj2)){
+									result=true;
+									break;
+								}
+								else{
+									result=false;
+									//continue;
+									if((result==false)&&(it4.hasNext()==false)){
+										errorMsg+="Values in Array1 Does NOT Equal Values in Array2:\n\r";
+										errorMsg+="Array1:" +json1.get(k1);
+										errorMsg+="Array2:" +json2.get(k2);
+										throw new ValueErrorException(errorMsg);
+									}
+									
+								}					
+							}				
+								
+//							JSONObject  subjson2=(JSONObject)(it4.next());
+							if(subjson1!=null&&subjson2!=null&&Compare2JSONValues(subjson1,subjson2,intflag)){
+								//it4= ((JSONArray)json2.get(k2)).iterator();
+								result=true;
+								break;
+							}
+							else{
+								if(!it4.hasNext()){
+									//System.out.println("Value in SubJSON1Does NOT Equal Value in SubJSON2:");
+									//System.out.println("SubJSON1:" +subjson1);
+									//System.out.println("SubJSON2:" +subjson2);
+									//System.out.println( ((JSONArray)json2.get(k2)).toString());
+									result=false;
+									errorMsg+="Values in SubJSON1 Does NOT Equal Values in SubJSON2:\n\r";
+									errorMsg+="SubJSON1:" +subjson1+"\n\r";
+									errorMsg+="SubJSON2:" +subjson2+"\n\r";
+									
+									throw new ValueErrorException(errorMsg);
+									//return result;
+								}
+							}
+						}
+					}
+					break;
+				}
+				else{
+					if(k1.equals(k2)){
+						if(json1.get(k1).equals(json2.get(k2))){
+							//System.out.println(k1+" : "+json1.get(k1).toString()+" Equals "+k2+" : "+json2.get(k2).toString());							
+							result = true;			
+							break;
+						}
+						else if(k1.equals("timestamp")){							
+										if(json1.get(k1).toString().length()!=0){
+											result=true;
+											//System.out.println("Timestamp Value check is ignored");
+											break;
+										}
+										else{
+											//System.out.println("Timestamp for "+k1+"in json1:" +json1+"is NULL");
+											result=false;
+											errorMsg+="Timestamp for "+k1+"in json1:" +json1+"is NULL \n\r";
+											throw new ValueErrorException(errorMsg);
+											//return result;
+										}										
+						}						
+						else{
+							result=false;
+							//System.out.println(k1+" : "+json1.get(k1).toString()+" Does NOT Equal "+k2+" : "+json2.get(k2).toString());
+							//System.out.println("json1:"+json1.toString());
+							//System.out.println("json2:"+json2.toString());
+							if(flag==0){
+								errorMsg+=k1+" : "+json1.get(k1).toString()+" Does NOT Equal "+k2+" : "+json2.get(k2).toString()+"\n\r";
+								errorMsg+="json1:"+json1.toString();
+								errorMsg+="json2:"+json2.toString();
+								throw new ValueErrorException(errorMsg);
+							}
+					
+							return result;
+						}
+					}
+					else{
+						if(!it2.hasNext()){
+							it2=keys2.iterator();							
+						}						
+					}					
+				}
+			}
+		}
+		return result;
+	}
+	public static boolean Compare2JSONValues(JSONObject json1,JSONObject json2)throws ValueErrorException{
+		boolean result=false; 
+		result=Compare2JSONValues(json1,json2,0);
+		return result;
+	}
+	public static boolean Compare2JSONTypes(JSONObject json1,JSONObject json2) throws TypeErrorException{
+		boolean result=false;
+		String errorMsg="[Error:Compare2JSONTypes:JSONUtility:]";
+		JSONArray keys1,keys2;
+		keys1=json1.names();
+		keys2=json2.names();
+		Iterator it1=keys1.iterator();
+		Iterator it2=keys2.iterator();
+		//System.out.println("keys1:" +keys1.toString());
+		//System.out.println("keys2:" +keys2.toString());
+		if(keys1.size()==0){
+			if(keys2.size()==0){
+				result=true;
+				return result;
+			}
+			else{
+				result=false;
+				//System.out.println("JSON1 does NOT equal JSON2");
+				//System.out.println("JSON1 is NULL"+ json1.toString());
+				//System.out.println("JSON2 is NOT NULL" +json2.toString());
+				errorMsg+="JSON1 does NOT equal JSON2 \n\r";
+				errorMsg+="JSON1 is NULL"+ json1.toString();
+				errorMsg+="JSON2 is NOT NULL" +json2.toString();
+				throw new TypeErrorException(errorMsg);
+				//return result;
+			}
+		}
+		while(it1.hasNext()){
+			String k1=it1.next().toString();
+			while(it2.hasNext()){
+				String k2=it2.next().toString();
+				//System.out.println(json1.get(k1).getClass().getSimpleName());
+				//System.out.println(json2.get(k2).toString());
+				/*
+				if(json1.get(k1).getClass().getSimpleName().equals(json2.get(k2).toString())){
+					result=true;
+					System.out.println("TypeOf key:" +k1 +" is "+json1.get(k1).getClass().getSimpleName()+" Equals "+k2 + " : "+ json2.get(k2).toString());
+					break;
+				}
+				else if(json1.get(k1).getClass().getSimpleName().equals("JSONObject")){
+					
+				}
+				else if(json1.get(k1).getClass().getSimpleName().equals("JSONArray")){
+					
+				}
+				else{
+					if(!it2.hasNext()){
+						it2=keys2.iterator();
+					}
+				}
+				*/
+				if(k1.equals(k2)){			
+					//System.out.println(json1.get(k1).getClass().getSimpleName());
+					//System.out.println(json2.get(k2));
+					if(json1.get(k1).getClass().getSimpleName().equals(json2.get(k2).toString())){
+
+						result=true;
+						//System.out.println("TypeOf key:" +k1 +" is "+json1.get(k1).getClass().getSimpleName()+" Equals "+k2 + " : "+ json2.get(k2).toString());
+						break;
+					}
+					else if(json1.get(k1).getClass().getSimpleName().equals("Integer")&&json2.get(k2).toString().toLowerCase().equals("int")){
+						result=true;
+						break;
+					}
+					else if(k1.toLowerCase().equals("uid")&&json2.get(k2).toString().toLowerCase().equals("long")){
+						if(json1.get(k1).getClass().getSimpleName().equals("Integer")){
+							result=true;
+							break;
+						}
+						if(json1.get(k1).getClass().getSimpleName().equals("Long")){
+							result=true;
+							break;
+						}
+						else{
+							result=false;
+							errorMsg+="TypeOf  key:" +k1 +" Does Not Equal key:"+k2 +"\n\r";
+							errorMsg+="TypeOf key" +k1+" is " +json1.get(k1).getClass().getSimpleName() +"\n\r";
+							errorMsg+="TypeOf key" +k2+" is " +json2.get(k2).getClass().getSimpleName() +"\n\r";							
+							throw new TypeErrorException(errorMsg);
+						}
+					}
+					else if(json1.get(k1).getClass().getSimpleName().equals("JSONObject")&&json1.get(k1).getClass().getSimpleName().equals(json2.get(k2).getClass().getSimpleName())){					
+							if(Compare2JSONTypes((JSONObject)json1.get(k1),(JSONObject)json2.get(k2))){
+								//System.out.println("TypeOf  key:" +k1 +" Equals key:"+k2);
+								//System.out.println("JSON1:"+((JSONObject)json1.get(k1)).toString());
+								//System.out.println("JSON2:"+((JSONObject)json2.get(k2)).toString());
+								result=true;
+								break;
+							}
+							else{
+								result=false;
+								errorMsg+="TypeOf  key:" +k1 +" Does Not Equal key:"+k2 +"\n\r";
+								errorMsg+="JSON1:"+((JSONObject)json1.get(k1)).toString()+"\n\r";
+								errorMsg+="JSON2:"+((JSONObject)json2.get(k2)).toString()+"\n\r";
+								throw new TypeErrorException(errorMsg);
+								//return false;
+							}
+						}
+					else if(json1.get(k1).getClass().getSimpleName().equals("JSONArray")&&json1.get(k1).getClass().getSimpleName().equals(json2.get(k2).getClass().getSimpleName())){
+					
+								
+								Iterator it3= ((JSONArray)json1.get(k1)).iterator();
+								Iterator it4= ((JSONArray)json2.get(k2)).iterator();
+								JSONObject subjson1=null;
+								JSONObject subjson2=null;
+								Object obj1=null,obj2=null;
+								//System.out.println("xxx"+json1.get(k1));
+								//System.out.println("JSON1:" +json1.toString());
+								//System.out.println("JSON2:" +json2.toString());
+								
+								if(json1.get(k1).toString().equals("[]")&&json1.get(k1).toString().equals(json2.get(k2).toString().trim())){
+									result=true;
+									break;
+								}
+								else if((!json1.getClass().getSimpleName().equals("JSONObject"))&&(!json1.get(k1).equals(json2.get(k2)))){
+									
+									result=false;
+									errorMsg+="Type in Array1 Does NOT Equal Array2: in the Key:" +k1 +"\n\r";
+									errorMsg+="Array1:" + json1.get(k1);
+									errorMsg+="Array2:" +json2.get(k2);
+									throw new TypeErrorException(errorMsg);
+								}
+								
+								while(it3.hasNext()){
+									obj1=it3.next();
+									if(obj1.getClass().getSimpleName().equals("JSONObject")){
+										subjson1=(JSONObject)(obj1);
+									}
+									//subjson1=(JSONObject)(it3.next());
+									//if(!it4.hasNext()){it4= ((JSONArray)json2.get(k2)).iterator();}
+									it4= ((JSONArray)json2.get(k2)).iterator();
+									while(it4.hasNext()){
+										 obj2=it4.next();
+										if(obj2.getClass().getSimpleName().equals("JSONObject")){
+											 subjson2=(JSONObject)(obj2);
+										}
+										else{
+											if(obj1.getClass().getSimpleName().equals(obj2)){												
+												result=true;
+												break;
+											}
+											else if(obj1.getClass().getSimpleName().equals("Integer")&&obj2.toString().toLowerCase().equals("int")){
+												result=true;
+												break;
+											}
+											else{
+												result=false;
+												if(!it4.hasNext()){
+													errorMsg+="Type in Array1 Does NOT Equal Array2: in the Key:" +k1 +"\n\r";
+													errorMsg+="Array1:" + json1.get(k1);
+													errorMsg+="Array2:" +json2.get(k2);
+													throw new TypeErrorException(errorMsg);
+												}
+											}
+										}
+										 //subjson2=(JSONObject)(it4.next());
+										if(Compare2JSONTypes(subjson1,subjson2)){
+											//System.out.println("TypeOf  key:" +k1 +" Equals key:"+k2);
+											//System.out.println("JSON1:"+json1.get(k1).toString());
+											//System.out.println("JSON2:"+json2.get(k2).toString());
+											//System.out.println("JSON2:"+((JSONObject)json2.get(k2)).toString());
+											result=true;
+											break;
+										}
+										else{
+											if(!it4.hasNext()){
+												//it4= ((JSONArray)json2.get(k2)).iterator();	
+												//System.out.println("Type in Subjson:" + subjson1.toString()+ "NOT Equal Subjson:" +subjson2.toString() +"in the Key:" +k1);
+												//System.out.println("JSON1:" +json1.toString());
+												//System.out.println("JSON2:" +json2.toString());
+												errorMsg+="Type in Subjson:" + subjson1.toString()+ "NOT Equal Subjson:" +subjson2.toString() +"in the Key:" +k1 +"\n\r";
+												errorMsg+="JSON1:"+json1.toString()+"\n\r";
+												errorMsg+="JSON2:"+json2.toString()+"\n\r";
+												throw new TypeErrorException(errorMsg);
+												//result=false;
+												
+												//return result;
+												}
+											}
+										}
+									}
+								}
+								//break;
+					else{
+						result=false;
+						errorMsg+="TypeOf key:" +k1 +" is "+json1.get(k1).getClass().getSimpleName()+" Doesnot Equal to "+k2 + " : "+ json2.get(k2).toString()+"\n\r";
+						errorMsg+="JSON1:"+json1.toString()+"\n\r";
+						errorMsg+="JSON2:"+json2.toString()+"\n\r";
+						throw new TypeErrorException(errorMsg);
+						}
+								
+					}
+
+					/*else if(json1.get(k1).toString().equals(null)){
+						
+					}*/
+				
+				}
+			}		
+		return result;
+	}
+	
+	
+	/*
+	public static JSONObject ResultSet2JSON(ResultSet rs,JSONObject jsonformat) throws SQLException{
+		JSONObject json=null;
+		JSONArray keys=null;
+		ResultSetMetaData rsmd=null;
+		String key="";
+		keys = jsonformat.names();
+		Iterator it=keys.iterator();
+		/*
+			if(rs!=null&&rs.getRow()==1){
+				rsmd=rs.getMetaData();
+				for(int i=0;i <rsmd.getColumnCount();i++){
+					while(it.hasNext()){
+						key=it.next().toString();
+						if(rsmd.getColumnName(i).equals(key)){
+							
+							
+							if(jsonformat.get(key).getClass().getSimpleName().equals("JSONObject")){
+								
+							}
+							else if(jsonformat.get(key).getClass().getSimpleName().equals("JSONArray")){
+								
+							}
+							else{
+								json.put(rsmd.getColumnName(i).toString(), rs.getObject(i));
+							}
+								
+						}
+						
+					}
+				}
+			}
+			else{
+				json=null;
+			}
+		
+			*/
+		//json=JSONCopy(jsonformat);
+		
+		//return json;
+	//}
+/*
+	public static JSONObject JSONCopy(JSONObject json){
+		//String strJSON=null;;
+		JSONObject newjson=null;		
+		//strJSON=json.toString();
+		newjson=JSONObject.fromObject(json);		
+		return newjson;	
+	}
+	
+	public static JSONObject UpdateJSONFromResultSet(ResultSet rs, JSONObject json) throws SQLException {
+		JSONObject newjson=JSONCopy(json);
+		
+		//if rs is null, do nothing
+		if(rs.getRow()==0){
+			return newjson;
+		}
+		// if rows in rs =1, update expected result
+		else if(rs.getRow() ==1){ 
+			
+		}else{
+			
+		}
+		
+		
+		
+		return newjson;
+		
+	}
+	*/
+}

@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/testcode/!svn/ver/270/InterfaceTest/IATest/src/com/yoloho/test/framework
+END
+Logger.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/testcode/!svn/ver/261/InterfaceTest/IATest/src/com/yoloho/test/framework/Logger.java
+END
+TestcaseExecuter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/270/InterfaceTest/IATest/src/com/yoloho/test/framework/TestcaseExecuter.java
+END
+KeyErrorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/testcode/!svn/ver/3/InterfaceTest/IATest/src/com/yoloho/test/framework/KeyErrorException.java
+END
+HttpsMethods.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/testcode/!svn/ver/260/InterfaceTest/IATest/src/com/yoloho/test/framework/HttpsMethods.java
+END
+htmlReportManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/264/InterfaceTest/IATest/src/com/yoloho/test/framework/htmlReportManager.java
+END
+ExcelFileManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/259/InterfaceTest/IATest/src/com/yoloho/test/framework/ExcelFileManager.java
+END
+XMLFileManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/testcode/!svn/ver/263/InterfaceTest/IATest/src/com/yoloho/test/framework/XMLFileManager.java
+END
+JSONUtility.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/testcode/!svn/ver/266/InterfaceTest/IATest/src/com/yoloho/test/framework/JSONUtility.java
+END
+Start.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/testcode/!svn/ver/252/InterfaceTest/IATest/src/com/yoloho/test/framework/Start.java
+END
+SendReportEmail.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/testcode/!svn/ver/1/InterfaceTest/IATest/src/com/yoloho/test/framework/SendReportEmail.java
+END
+SSLClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/testcode/!svn/ver/3/InterfaceTest/IATest/src/com/yoloho/test/framework/SSLClient.java
+END
+HttpMethods.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/testcode/!svn/ver/131/InterfaceTest/IATest/src/com/yoloho/test/framework/HttpMethods.java
+END
+ValueErrorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/testcode/!svn/ver/3/InterfaceTest/IATest/src/com/yoloho/test/framework/ValueErrorException.java
+END
+Config.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/testcode/!svn/ver/258/InterfaceTest/IATest/src/com/yoloho/test/framework/Config.java
+END
+TestcaseManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/testcode/!svn/ver/269/InterfaceTest/IATest/src/com/yoloho/test/framework/TestcaseManager.java
+END
+IsNotFolderException.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/testcode/!svn/ver/249/InterfaceTest/IATest/src/com/yoloho/test/framework/IsNotFolderException.java
+END
+FolderNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/testcode/!svn/ver/247/InterfaceTest/IATest/src/com/yoloho/test/framework/FolderNotFoundException.java
+END
+ReportEmailUtility.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/262/InterfaceTest/IATest/src/com/yoloho/test/framework/ReportEmailUtility.java
+END
+txtFileManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/testcode/!svn/ver/265/InterfaceTest/IATest/src/com/yoloho/test/framework/txtFileManager.java
+END
+TypeErrorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/testcode/!svn/ver/3/InterfaceTest/IATest/src/com/yoloho/test/framework/TypeErrorException.java
+END
+FileNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/testcode/!svn/ver/246/InterfaceTest/IATest/src/com/yoloho/test/framework/FileNotFoundException.java
+END
+IsNotFileException.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/testcode/!svn/ver/248/InterfaceTest/IATest/src/com/yoloho/test/framework/IsNotFileException.java
+END

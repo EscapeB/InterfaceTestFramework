@@ -1,0 +1,56 @@
+package com.yoloho.test.framework.api;
+
+import java.io.File;
+
+import net.sf.json.JSONObject;
+
+public class TestcaseEntry {
+
+	public JSONObject jsonRequest;
+	public JSONObject jsonResponse;
+	public JSONObject jsonExpectedResult;
+	public JSONObject jsonExpectedFormat; 
+	public String tcName;
+	public int tcId;
+	public String APIURL;
+	public String Version;
+	public String Method;
+	public String tcFilePathName;
+	public String tcType;
+	public String TestSuitName;
+	public String tcResult;
+	//public String tcLogFilePathName;
+	public File logFile;
+	//public String Username;
+	//public String Password;
+	//public String UId;
+	//public String Token;
+	public String APIType;
+	public String NeedCheckValue;
+	//public String strSql;
+
+	public TestcaseEntry(){
+		this.jsonRequest=null;
+		this.jsonResponse=null;
+		this.jsonExpectedResult=null;
+		this.jsonExpectedFormat=null;
+		this.tcName="";
+		this.tcId=0;
+		this.APIURL="";
+		this.Version="";
+		this.Method="";
+		this.tcFilePathName="";
+		this.tcResult="";
+		this.TestSuitName="";
+		//this.tcLogFilePathName="";
+		this.logFile=null;
+		//this.Username="";
+		//this.Password="";
+		//this.UId="";
+		//this.Token="";
+		this.APIType="";
+		this.NeedCheckValue="";
+		//this.strSql="";
+	}
+	
+}
